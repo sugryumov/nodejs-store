@@ -19,6 +19,27 @@ class Poster {
     };
   }
 
+  static async update(poster) {
+    const posters = await Poster.getAll();
+
+    const idx = posters.findIndex(item => item.id === poster.id);
+    posters[idx] = poster;
+
+    return new Promise((resolve, reject) => {
+      fs.writeFile(
+        path.join(__dirname, "..", "data", "posters.json"),
+        JSON.stringify(posters),
+        err => {
+          if (err) {
+            reject(err);
+          } else {
+            resolve();
+          }
+        }
+      );
+    });
+  }
+
   async save() {
     const posters = await Poster.getAll();
     posters.push(this.newPoster());
@@ -52,6 +73,12 @@ class Poster {
         }
       );
     });
+  }
+
+  static async getById(id) {
+    const posters = await Poster.getAll();
+
+    return posters.find(poster => id === poster.id);
   }
 }
 
