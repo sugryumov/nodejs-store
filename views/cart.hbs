@@ -1,1 +1,27 @@
 <h1>Cart</h1>
+
+{{#if posters.length}}
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Count</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each posters}}
+        <tr>
+            <td>{{title}}</td>
+            <td>{{count}}</td>
+            <td><button class="btn btn-small">del</button></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+<p><strong>Total</strong>{{price}}</p>
+
+{{else}}
+<p>Epty cart</p>
+{{/if}}
