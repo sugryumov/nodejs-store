@@ -1,23 +1,27 @@
 .price {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .poster {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .poster h1 {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .poster img {
-    max-width: 600px;
-    height: auto;
+  max-width: 600px;
+  height: auto;
 }
 
 .poster .price.big {
-    font-size: 32px;
+  font-size: 32px;
+}
+
+.posters__add-to-cart {
+  margin-top: 15px;
 }
