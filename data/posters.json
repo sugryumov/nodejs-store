@@ -1,1 +1,26 @@
-[{"title":"Mountains","price":"40","img":"https://images.unsplash.com/photo-1575657692453-b8452c5fb3df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80","id":"c29437af-14ad-4865-8fac-9f1054865a2f"},{"title":"Sea","price":"25","img":"https://images.unsplash.com/photo-1550757750-4ce187a65014?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80","id":"aa3bb2ce-ead4-4980-8a3b-acb2192d7e9b"},{"title":"Women","price":"34","img":"https://images.unsplash.com/photo-1575633660450-84729871fb42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80","id":"a2257078-83a8-4ff4-889f-753fad3ee827"},{"title":"Street","price":"35","img":"https://images.unsplash.com/photo-1575615997935-05ec651f4faf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60","id":"1d7a7fb3-0972-42ca-b1d6-0a51028a07ee"}]
+[
+  {
+    "title": "Mountains",
+    "price": "40",
+    "img": "https://images.unsplash.com/photo-1575657692453-b8452c5fb3df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+    "id": "c29437af-14ad-4865-8fac-9f1054865a2f"
+  },
+  {
+    "title": "Sea",
+    "price": "25",
+    "img": "https://images.unsplash.com/photo-1550757750-4ce187a65014?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+    "id": "aa3bb2ce-ead4-4980-8a3b-acb2192d7e9b"
+  },
+  {
+    "title": "Women",
+    "price": "34",
+    "img": "https://images.unsplash.com/photo-1575633660450-84729871fb42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+    "id": "a2257078-83a8-4ff4-889f-753fad3ee827"
+  },
+  {
+    "title": "Street",
+    "price": "35",
+    "img": "https://images.unsplash.com/photo-1575615997935-05ec651f4faf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    "id": "1d7a7fb3-0972-42ca-b1d6-0a51028a07ee"
+  }
+]

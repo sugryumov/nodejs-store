@@ -34,6 +34,30 @@ class Cart {
     });
   }
 
+  static async remove(id) {
+    const cart = await Cart.fetch();
+    const idx = cart.posters.findIndex(item => item.id === id);
+    const poster = cart.posters[idx];
+
+    if (poster.count === 1) {
+      cart.posters = cart.posters.filter(item => item.id !== id);
+    } else {
+      cart.posters[idx].count--;
+    }
+
+    cart.price -= poster.price;
+
+    return new Promise((resolve, reject) => {
+      fs.writeFile(p, JSON.stringify(cart), err => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(cart);
+        }
+      });
+    });
+  }
+
   static async fetch() {
     return new Promise((resolve, reject) => {
       fs.readFile(p, "utf-8", (err, content) => {
