@@ -11,11 +11,18 @@ router.get("/", (req, res) => {
 });
 
 router.post("/", async (req, res) => {
-  const poster = new Poster(req.body.title, req.body.price, req.body.img);
+  const poster = new Poster({
+    title: req.body.title,
+    price: req.body.price,
+    img: req.body.img
+  });
 
-  await poster.save();
-
-  res.redirect("/posters");
+  try {
+    await poster.save();
+    res.redirect("/posters");
+  } catch (e) {
+    console.log(e);
+  }
 });
 
 module.exports = router;
