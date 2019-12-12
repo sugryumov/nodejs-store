@@ -38,6 +38,17 @@ router.post("/edit", async (req, res) => {
   res.redirect("/posters");
 });
 
+router.post("/remove", async (req, res) => {
+  try {
+    await Poster.deleteOne({
+      _id: req.body.id
+    });
+    res.redirect('/posters')
+  } catch (e) {
+    console.log(e);
+  }
+});
+
 router.get("/:id", async (req, res) => {
   const poster = await Poster.findById(req.params.id);
   res.render("poster", {

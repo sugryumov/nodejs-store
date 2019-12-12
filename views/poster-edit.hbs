@@ -21,5 +21,11 @@
 
     <input type="hidden" name="id" value="{{poster.id}}">
 
-    <button class="btn btn-primary">Edit poster</button>
+    <button type="submit" class="btn btn-primary">Edit poster</button>
+</form>
+
+<form action="/posters/remove" method="POST" class="poster__remove">
+    <input type="hidden" name="id" value="{{poster.id}}">
+
+    <button type="submit" class="btn red">Delete poster</button>
 </form>
