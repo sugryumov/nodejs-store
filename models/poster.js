@@ -9,7 +9,11 @@ const poster = new Schema({
     type: Number,
     required: true
   },
-  img: String
+  img: String,
+  userId: {
+    type: Schema.Types.ObjectId,
+    ref: "User"
+  }
 });
 
 module.exports = model("Poster", poster);

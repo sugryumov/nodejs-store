@@ -4,7 +4,8 @@ const router = Router();
 
 router.get("/", async (req, res) => {
   try {
-    const posters = await Poster.find();
+    const posters = await Poster.find().populate("userId");
+
     res.render("posters", {
       title: "Posters",
       isPosters: true,
@@ -43,7 +44,7 @@ router.post("/remove", async (req, res) => {
     await Poster.deleteOne({
       _id: req.body.id
     });
-    res.redirect('/posters')
+    res.redirect("/posters");
   } catch (e) {
     console.log(e);
   }
